@@ -1,32 +1,44 @@
 "use client";
 
-import { useRef } from "react";
+// Importing React and other necessary modules
+import React, { useRef } from "react";
 import { projectsData } from "@/lib/data";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+// Defining the ProjectProps type
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: StaticImageData;
+  link: string;
+  codeLink: string;
+};
 
+// Project component
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
+  link,
+  codeLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
     <motion.div
       ref={ref}
       style={{
-        scale: scaleProgess,
-        opacity: opacityProgess,
+        scale: scaleProgress,
+        opacity: opacityProgress,
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
@@ -46,6 +58,24 @@ export default function Project({
               </li>
             ))}
           </ul>
+          <div className="mt-5 flex">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
+            >
+              Visit Project
+            </a>
+            <a
+              href={codeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+            >
+              View Code
+            </a>
+          </div>
         </div>
 
         <Image
@@ -69,3 +99,4 @@ export default function Project({
     </motion.div>
   );
 }
+
