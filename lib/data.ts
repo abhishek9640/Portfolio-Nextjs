@@ -68,15 +68,15 @@ export const projectsData = [
     tags: ["TypeScript", "Next.js", "Tailwind", "Redux", "Shadcn", "Cloudinary", "Clerk", "Stripe"],
     imageUrl: imaginify,
     link: "https://imaginify-vert-alpha.vercel.app/",
-    codeLink: "https://github.com/abhishek9640/Imaginify", // Add the repository URL
+    codeLink: "https://github.com/abhishek9640/Imaginify", 
   },
   {
     title: "V_verse",
     description: "LinkedIn-inspired web app for my college",
     tags: ["React + Vite", "Firebase", "Tailwind"],
     imageUrl: V_verse,
-    link: "https://github.com/abhishek9640/VGI_Verse",
-    codeLink: "https://github.com/abhishek9640/VGI_Verse", // Add the repository URL
+    link: "https://vgi-verse.vercel.app/",
+    codeLink: "https://github.com/abhishek9640/VGI_Verse", 
   },
   {
     title: "Digital Library",
