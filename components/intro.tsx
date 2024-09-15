@@ -63,8 +63,8 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Abhishek.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer with a focus on React (Next.js)</span>{" "}
-        <span className="font-bold">.</span> Passionate about crafting seamless digital experiences
+        <span className="font-bold">full-stack developer with experience in React (Next.js) and backend development</span>{" "}
+        <span className="font-bold">.</span> I create scalable, user-friendly applications, focusing on seamless digital experiences.
       </motion.h1>
 
       <motion.div
@@ -89,7 +89,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="https://drive.google.com/file/d/1JwpZRrFF5FvloHAIeIF8M9Hc4h-OxLWa/view?usp=sharing"
+          href="https://drive.google.com/file/d/1NjvgxERhYXstmeg8R-YVHLmGTdkrlBOc/view?usp=sharing"
           download
         >
           Download CV{" "}

@@ -1,5 +1,5 @@
 import React from "react";
-import { RiSchoolLine } from "react-icons/ri";
+import { RiSchoolLine, RiBriefcaseLine } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
 import V_verse from "@/public/V_verse.png";
 import imaginify from "@/public/imaginify.png";
@@ -13,6 +13,10 @@ export const links = [
   {
     name: "About",
     hash: "#about",
+  },
+  {
+    name: "Experience",
+    hash: "#experience",
   },
   {
     name: "Projects",
@@ -88,6 +92,37 @@ export const projectsData = [
     codeLink:"https://github.com/abhishek9640/GRANTH-VGI_Library_And_Notice_Portal"
   },
 ] as const;
+
+export const experienceData = [
+  {
+    role: "Full Stack Developer",
+    company: "VOCSO Technologies Pvt. Ltd.",
+    duration: "Apr 2024 - Present",
+    responsibilities: [
+      "Led a team to build rodicconsultants.com and jbcollege.com using Next.js, Strapi (Node.js CMS), and PostgreSQL, with dynamic functionality, fully responsive UI/UX (Tailwind CSS, Shadcn), SEO optimization, and hosting on AWS.",
+      "Managed project lifecycles from planning to deployment, ensuring high-quality, timely deliveries.",
+      "Demonstrated proficiency in frontend/backend technologies with over a year of experience in JavaScript frameworks like React and Next.js.",
+      "Managed College18.com and School18.com, SEO-optimized dynamic CMS websites with extensive listings of colleges and schools, focusing on performance and user experience.",
+    ],
+    date: "Apr 2024 - Present",
+    icon: React.createElement(RiBriefcaseLine),
+  },
+  {
+    role: "Web Developer",
+    company: "DigiHook",
+    duration: "July 2023 - Mar 2024",
+    responsibilities: [
+      "Developed scalable Inventory Management and Office Management Systems, focusing on secure backend architectures.",
+      "Led web projects using HTML, CSS, JavaScript, Bootstrap, and ReactJS, delivering responsive, user-friendly designs.",
+      "Built robust backend solutions using PHP, integrating seamlessly with databases for efficient data management.",
+      "Collaborated with clients to ensure tailored, high-quality project outcomes.",
+    ],
+    date: "July 2023 - Mar 2024",
+    icon: React.createElement(RiBriefcaseLine),
+  },
+] as const;
+
+
 
 
 export const skillsData = [

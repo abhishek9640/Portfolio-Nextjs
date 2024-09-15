@@ -19,7 +19,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I am a final-year B.Tech Computer Science student with a deep-seated passion for programming,{" "}
+        I am a B.Tech Computer Science graduate with with over a year of professional experience in software development ,{" "}
         My enthusiasm lies in solving complex problems and bringing ideas to life through code.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
