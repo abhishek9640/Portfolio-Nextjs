@@ -138,14 +138,15 @@ export const skillsData = [
   "Firebase",
   "MongoDB",
   "Redux",
-  "MySQl",
+  "MySQL",
   "Java",
   "REST APIs",
   "Postman",
   "Python",
   "PHP",
-  "UI/UX"
+  "UI/UX",
   "Figma",
   "Adobe XD",
   "Framer Motion",
 ] as const;
+
