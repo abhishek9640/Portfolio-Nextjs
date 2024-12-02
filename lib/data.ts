@@ -144,5 +144,8 @@ export const skillsData = [
   "Postman",
   "Python",
   "PHP",
+  "UI/UX"
+  "Figma",
+  "Adobe XD",
   "Framer Motion",
 ] as const;
