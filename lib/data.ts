@@ -42,7 +42,7 @@ export const educationData = [
     title: "Bachelor of Technology in Computer Science",
     location: "Vishveshwarya Group of Institutions, Greater Noida",
     description:
-      "Expected graduation in 2024. Currently maintaining a CGPA of 7.53. Relevant coursework includes Data Structures and Algorithms, Operating Systems, Computer Networks, and Database Management Systems.",
+      "Graduated in 2024 with a Bachelor of Technology in Computer Science, achieving a CGPA of 7.61. Gained a strong foundation through coursework in core subjects such as Data Structures and Algorithms, Operating Systems, Computer Networks, and Database Management Systems. Enhanced problem-solving skills through hands-on projects and practical implementations.",
     icon: React.createElement(LuGraduationCap),
     date: "2020 - 2024",
   },
