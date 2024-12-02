@@ -94,30 +94,24 @@ export const projectsData = [
 ] as const;
 
 export const experienceData = [
-  {
-    role: "Full Stack Developer",
-    company: "VOCSO Technologies Pvt. Ltd.",
-    duration: "Apr 2024 - Present",
+   {
+    role: "Sr. Software Developer",
+    company: "DigiHook",
+    duration: "Oct 2024 - Present",
     responsibilities: [
-      "Led a team to build rodicconsultants.com and jbcollege.com using Next.js, Strapi (Node.js CMS), and PostgreSQL, with dynamic functionality, fully responsive UI/UX (Tailwind CSS, Shadcn), SEO optimization, and hosting on AWS.",
-      "Managed project lifecycles from planning to deployment, ensuring high-quality, timely deliveries.",
-      "Demonstrated proficiency in frontend/backend technologies with over a year of experience in JavaScript frameworks like React and Next.js.",
-      "Managed College18.com and School18.com, SEO-optimized dynamic CMS websites with extensive listings of colleges and schools, focusing on performance and user experience.",
+      "Architected and deployed scalable Inventory and Office Management Systems with secure backends, reducing manual processes by 40% and adding real-time dashboards for operational insights. Designed intuitive, responsive UI/UX interfaces using ShadCN and Tailwind CSS, boosting cross-device compatibility and user retention by 25%. Developed advanced web applications with Next.js, Node.js, and PostgreSQL, achieving 35% better user engagement and 40% faster load times through server-side rendering and caching. Optimized Laravel-based solutions with efficient MySQL integration, enhancing system response by 30%. Streamlined workflows using agile methodologies, Git, and CI/CD pipelines, cutting development cycles by 20% and ensuring 99.9% application reliability. Created engaging dashboards with React and Tailwind CSS, driving better decision-making through dynamic data visualization.",
     ],
-    date: "Apr 2024 - Present",
+    date: "July 2023 - Mar 2024",
     icon: React.createElement(RiBriefcaseLine),
   },
   {
-    role: "Web Developer",
-    company: "DigiHook",
-    duration: "July 2023 - Mar 2024",
+    role: "Full Stack Developer",
+    company: "VOCSO Technologies Pvt. Ltd.",
+    duration: "Apr 2024 - Sept 2024",
     responsibilities: [
-      "Developed scalable Inventory Management and Office Management Systems, focusing on secure backend architectures.",
-      "Led web projects using HTML, CSS, JavaScript, Bootstrap, and ReactJS, delivering responsive, user-friendly designs.",
-      "Built robust backend solutions using PHP, integrating seamlessly with databases for efficient data management.",
-      "Collaborated with clients to ensure tailored, high-quality project outcomes.",
+      "Led the development of high-performance websites such as rodicconsultants.com and jbknowledgepark.co.in using Next.js, Node.js, and PostgreSQL, achieving a 30% increase in user engagement through optimized functionality and intuitive design. Enhanced education platforms like College18.com and School18.com with technical SEO practices and performance improvements, boosting search engine visibility and user experience. Designed responsive, accessible UI/UX interfaces using ShadCN and Tailwind CSS, increasing user retention by 20%. Built robust, interactive web applications with server-side rendering, caching, and optimized API integrations for 100% cross-browser compatibility. Delivered scalable enterprise-level solutions with React.js, PHP, and JavaScript frameworks, optimizing system architecture for maintainability. Improved scalability and performance through modular design patterns and database query optimizations, achieving 30% faster load times and enhanced user satisfaction..",
     ],
-    date: "July 2023 - Mar 2024",
+    date: "Apr 2024 - Present",
     icon: React.createElement(RiBriefcaseLine),
   },
 ] as const;
