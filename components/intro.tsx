@@ -64,7 +64,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Abhishek.</span> I'm a{" "}
         <span className="font-bold">Software Developer with expertise in React, Next.js, Node.js, and PHP. My experience includes leading dynamic projects at VOCSO Technologies and DigiHook</span>{" "}
-        <span className="font-bold">.</span>  where I built responsive, scalable, and user-friendly web applications. With a strong foundation in databases like MongoDB, MySQL, and PostgreSQL, I excel in delivering robust backend architectures and optimizing user experiences. I thrive on teamwork, time management, and crafting solutions that drive engagement and efficiency.
+        <span className="font-bold">.</span>  where I built responsive, scalable, and user-friendly web applications.
       </motion.h1>
 
       <motion.div
