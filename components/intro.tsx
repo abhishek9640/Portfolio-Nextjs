@@ -63,8 +63,8 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Abhishek.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer with experience in React (Next.js) and backend development</span>{" "}
-        <span className="font-bold">.</span> I create scalable, user-friendly applications, focusing on seamless digital experiences.
+        <span className="font-bold">Software Developer with expertise in React, Next.js, Node.js, and PHP. My experience includes leading dynamic projects at VOCSO Technologies and DigiHook</span>{" "}
+        <span className="font-bold">.</span>  where I built responsive, scalable, and user-friendly web applications. With a strong foundation in databases like MongoDB, MySQL, and PostgreSQL, I excel in delivering robust backend architectures and optimizing user experiences. I thrive on teamwork, time management, and crafting solutions that drive engagement and efficiency.
       </motion.h1>
 
       <motion.div
