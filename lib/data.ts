@@ -95,7 +95,7 @@ export const projectsData = [
 
 export const experienceData = [
   {
-    role: "Sr. Software Developer",
+    role: "Software Developer",
     company: "DigiHook",
     duration: "Oct 2024 - Present",
     responsibilities: [
@@ -110,7 +110,7 @@ export const experienceData = [
     icon: React.createElement(RiBriefcaseLine),
   },
   {
-    role: "Full Stack Developer",
+    role: "Software Developer",
     company: "VOCSO Technologies Pvt. Ltd.",
     duration: "Apr 2024 - Sept 2024",
     responsibilities: [
