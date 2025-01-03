@@ -106,7 +106,7 @@ export const experienceData = [
       "Streamlined workflows using agile methodologies, Git, and CI/CD pipelines, cutting development cycles by 20% and ensuring 99.9% application reliability.",
       "Created engaging dashboards with React and Tailwind CSS, driving better decision-making through dynamic data visualization.",
     ],
-    date: "July 2023 - Mar 2024",
+    date: "Oct 2024 - Present",
     icon: React.createElement(RiBriefcaseLine),
   },
   {
@@ -121,7 +121,7 @@ export const experienceData = [
       "Delivered scalable enterprise-level solutions with React.js, PHP, and JavaScript frameworks, optimizing system architecture for maintainability.",
       "Improved scalability and performance through modular design patterns and database query optimizations, achieving 30% faster load times and enhanced user satisfaction.",
     ],
-    date: "Apr 2024 - Present",
+    date: "Apr 2024 - Sept 2024",
     icon: React.createElement(RiBriefcaseLine),
   },
 ] as const;
