@@ -1,12 +1,10 @@
 "use client";
 
-// Importing React and other necessary modules
 import React, { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-// Defining the ProjectProps type
 type ProjectProps = {
   title: string;
   description: string;
@@ -16,7 +14,6 @@ type ProjectProps = {
   codeLink: string;
 };
 
-// Project component
 export default function Project({
   title,
   description,
@@ -28,75 +25,83 @@ export default function Project({
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ["0 1", "1 1"],
   });
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.4, 1]);
 
   return (
     <motion.div
       ref={ref}
-      style={{
-        scale: scaleProgress,
-        opacity: opacityProgress,
-      }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      style={{ scale: scaleProgress, opacity: opacityProgress }}
+      className="group mb-12 sm:mb-20 last:mb-0 mx-auto max-w-[60rem]"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            {description}
-          </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
+      <section
+        className="relative grid sm:grid-cols-[1fr_0.9fr] gap-8 items-center p-6 sm:p-10 
+        rounded-2xl border border-white/10 bg-gray-900/40 hover:bg-gray-900/60 
+        transition-all duration-300 shadow-lg"
+      >
+        {/* LEFT: Text Block */}
+        <div className="flex flex-col gap-4 sm:gap-5">
+          <h3 className="text-2xl font-semibold text-white">{title}</h3>
+          <p className="text-sm leading-relaxed text-white/70">{description}</p>
+
+          {/* Tags */}
+          <ul className="flex flex-wrap gap-2 mt-1">
+            {tags.map((tag, idx) => (
               <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
+                key={idx}
+                className="text-[0.65rem] tracking-wide uppercase px-3 py-1 rounded-full 
+                bg-white/10 text-white/70"
               >
                 {tag}
               </li>
             ))}
           </ul>
-          <div className="mt-5 flex">
+
+          {/* Buttons */}
+          <div className="flex gap-3 pt-2">
             <a
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
+              className="px-5 py-2 rounded-full bg-white text-gray-900 hover:bg-gray-200 
+              transition text-sm shadow-sm"
             >
-              Visit Project
+              Live Demo
             </a>
-            <a
-              href={codeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-            >
-              View Code
-            </a>
+
+            {codeLink && (
+              <a
+                href={codeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2 rounded-full border text-sm border-white/40 text-white/70 
+                hover:bg-white/10 transition"
+              >
+                Source Code
+              </a>
+            )}
           </div>
         </div>
 
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
-
-        group-even:right-[initial] group-even:-left-40"
-        />
+        {/* RIGHT: Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.92, x: 40 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.4 }}
+          className="flex justify-center"
+        >
+          <Image
+            src={imageUrl}
+            alt={`${title} preview`}
+            quality={95}
+            className="max-w-[90%] sm:max-w-[95%] rounded-xl shadow-xl 
+            transition-all duration-300 ease-out group-hover:scale-[1.03]"
+          />
+        </motion.div>
       </section>
     </motion.div>
   );
 }
-
