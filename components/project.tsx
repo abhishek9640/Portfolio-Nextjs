@@ -85,6 +85,7 @@ export default function Project({
             src={imageUrl}
             alt={`${title} preview`}
             quality={95}
+            unoptimized={true}
             className="max-w-[90%] sm:max-w-[95%] rounded-xl shadow-xl 
             transition-all duration-300 ease-out group-hover:scale-[1.03]"
           />
