@@ -71,18 +71,6 @@ export default function Project({
             >
               Live Demo
             </a>
-
-            {codeLink && (
-              <a
-                href={codeLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-5 py-2 rounded-full border text-sm border-white/40 text-white/70 
-                hover:bg-white/10 transition"
-              >
-                Source Code
-              </a>
-            )}
           </div>
         </div>
 
