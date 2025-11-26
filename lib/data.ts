@@ -1,8 +1,8 @@
 import React from "react";
 import { RiSchoolLine, RiBriefcaseLine } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
-import editzen_img from "@/public/editzen.png";
-import travel_img from "@/public/travel.png";
+import editzen_img from "@/public/editzen.webp";
+import travel_img from "@/public/travel.webp";
 
 export const links = [
   {

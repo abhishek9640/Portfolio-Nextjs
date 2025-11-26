@@ -29,7 +29,7 @@ export default function Intro() {
             transition={{ type: "spring", stiffness: 120 }}
           >
             <Image
-              src="/dp.png"
+              src="/dp.webp"
               alt="Abhishek portrait"
               width="160"
               height="160"
